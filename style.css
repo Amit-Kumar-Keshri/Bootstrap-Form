@@ -1,27 +1,38 @@
 * {
   padding: 0;
   margin: 0;
-
 }
-.main-contain{
-    position: relative;
+.main-contain {
+  position: relative;
 }
 .drop {
   display: flex;
   height: 125vh;
-  width: 100%;
+  width: -webkit-fill-available;
   align-items: center;
   justify-content: center;
   /* Created with https://www.css-gradient.com */
-/* background: rgba(100, 219, 202, 1.0);
+  /* background: rgba(100, 219, 202, 1.0);
 background: -webkit-radial-gradient(right, rgba(100, 219, 202, 1.0), rgba(88, 77, 217, 1.0));
 background: -moz-radial-gradient(right, rgba(100, 219, 202, 1.0), rgba(88, 77, 217, 1.0));
 background: radial-gradient(to left, rgba(100, 219, 202, 1.0), rgba(88, 77, 217, 1.0)); */
-/* Created with https://www.css-gradient.com */
-background: rgba(100, 219, 202, 1.0);
-background: -webkit-radial-gradient(right, rgba(100, 219, 202, 1.0), rgba(151, 129, 226, 1.0));
-background: -moz-radial-gradient(right, rgba(100, 219, 202, 1.0), rgba(151, 129, 226, 1.0));
-background: radial-gradient(to left, rgba(100, 219, 202, 1.0), rgba(151, 129, 226, 1.0));
+  /* Created with https://www.css-gradient.com */
+  background: rgba(100, 219, 202, 1);
+  background: -webkit-radial-gradient(
+    right,
+    rgba(100, 219, 202, 1),
+    rgba(151, 129, 226, 1)
+  );
+  background: -moz-radial-gradient(
+    right,
+    rgba(100, 219, 202, 1),
+    rgba(151, 129, 226, 1)
+  );
+  background: radial-gradient(
+    to left,
+    rgba(100, 219, 202, 1),
+    rgba(151, 129, 226, 1)
+  );
   position: absolute;
   /* z-index: -1; */
 }
@@ -98,12 +109,13 @@ background: radial-gradient(to left, rgba(100, 219, 202, 1.0), rgba(151, 129, 22
   animation-delay: 4500ms;
 }
 /*************form*******************/
-.container{
+.container {
   position: absolute;
   z-index: 1;
   left: 25%;
   margin: 3% 0;
   color: #1c1318;
+  width: auto;
 }
 
 .mb-3 {
@@ -113,16 +125,16 @@ background: radial-gradient(to left, rgba(100, 219, 202, 1.0), rgba(151, 129, 22
   font-weight: 600;
   font-size: 2rem;
 }
-@media (min-width: 576px) and (max-width: 767px){
-  .container{
+@media (min-width: 576px) and (max-width: 767px) {
+  .container {
     left: 5%;
   }
 }
-@media (min-width: 400px) and (max-width: 575px){
-    .drop{
-        height: 170vh;
-    }
-  .container{
+@media (min-width: 400px) and (max-width: 575px) {
+  .drop {
+    height: 170vh;
+  }
+  .container {
     left: 0%;
   }
 }
