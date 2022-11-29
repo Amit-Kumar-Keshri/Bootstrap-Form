@@ -12,7 +12,16 @@
   width: 100%;
   align-items: center;
   justify-content: center;
-  background-color: #59bdb8;
+  /* Created with https://www.css-gradient.com */
+/* background: rgba(100, 219, 202, 1.0);
+background: -webkit-radial-gradient(right, rgba(100, 219, 202, 1.0), rgba(88, 77, 217, 1.0));
+background: -moz-radial-gradient(right, rgba(100, 219, 202, 1.0), rgba(88, 77, 217, 1.0));
+background: radial-gradient(to left, rgba(100, 219, 202, 1.0), rgba(88, 77, 217, 1.0)); */
+/* Created with https://www.css-gradient.com */
+background: rgba(100, 219, 202, 1.0);
+background: -webkit-radial-gradient(right, rgba(100, 219, 202, 1.0), rgba(151, 129, 226, 1.0));
+background: -moz-radial-gradient(right, rgba(100, 219, 202, 1.0), rgba(151, 129, 226, 1.0));
+background: radial-gradient(to left, rgba(100, 219, 202, 1.0), rgba(151, 129, 226, 1.0));
   position: absolute;
   /* z-index: -1; */
 }
@@ -94,13 +103,13 @@
   z-index: 1;
   left: 25%;
   margin: 3% 0;
-
+  color: #1c1318;
 }
 
 .mb-3 {
   text-align: center;
   text-decoration: underline;
-  color: black;
+  color: #1c1318;
   font-weight: 600;
   font-size: 2rem;
 }
