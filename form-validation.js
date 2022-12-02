@@ -35,7 +35,7 @@
  jQuery(document).ready(function () {
    jQuery("#country").change(function () {
      if (jQuery("#country").val() == "Other") {
-       jQuerjQuery(".cntry").show();
+       jQuery(".cntry").show();
        const option = "<option val='Other'>Other</option>";
        jQuery("#states").append(option);
      } else {
@@ -51,3 +51,25 @@
      }
    });
  });
+
+
+
+  var selectfield = document.getElementById("selectfield");
+  var selecttext = document.getElementById("selecttext");
+  var options = document.getElementsByClassName("options");
+  var list = document.getElementById("list");
+  var arrowIcon = document.getElementById("arrowIcon");
+
+
+  selectfield.onclick = function(){
+    list.classList.toggle("hide");
+    arrowIcon.classList.toggle("rotate");
+  }
+
+  for (option of options) {
+    option.onclick = function () {
+      selecttext.innerHTML = this.textContent;
+      list.classList.toggle("hide");
+      arrowIcon.classList.toggle("rotate");
+    };
+  }

@@ -2,21 +2,8 @@
   padding: 0;
   margin: 0;
 }
-.main-contain {
-  position: relative;
-}
-.drop {
-  display: flex;
-  height: 125vh;
-  width: -webkit-fill-available;
-  align-items: center;
-  justify-content: center;
-  /* Created with https://www.css-gradient.com */
-  /* background: rgba(100, 219, 202, 1.0);
-background: -webkit-radial-gradient(right, rgba(100, 219, 202, 1.0), rgba(88, 77, 217, 1.0));
-background: -moz-radial-gradient(right, rgba(100, 219, 202, 1.0), rgba(88, 77, 217, 1.0));
-background: radial-gradient(to left, rgba(100, 219, 202, 1.0), rgba(88, 77, 217, 1.0)); */
-  /* Created with https://www.css-gradient.com */
+.main-contain{
+  /* position: relative; */
   background: rgba(100, 219, 202, 1);
   background: -webkit-radial-gradient(
     right,
@@ -33,8 +20,17 @@ background: radial-gradient(to left, rgba(100, 219, 202, 1.0), rgba(88, 77, 217,
     rgba(100, 219, 202, 1),
     rgba(151, 129, 226, 1)
   );
+  /* z-index: -2; */
+}
+.drop {
+  display: flex;
+  height: 100vh;
+  width: -webkit-fill-available;
+  /* width: 100%; */
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  /* z-index: -1; */
+  z-index: -1;
 }
 
 .drop button {
@@ -110,11 +106,12 @@ background: radial-gradient(to left, rgba(100, 219, 202, 1.0), rgba(88, 77, 217,
 }
 /*************form*******************/
 .container {
-  position: absolute;
-  z-index: 1;
-  left: 25%;
-  margin: 3% 0;
+  /* position: absolute;
+  z-index: 1; */
+  /* left: 25%; */
+  margin: 3% auto;
   color: #1c1318;
+  padding: 0 30px;
   width: auto;
 }
 
@@ -189,3 +186,77 @@ background: radial-gradient(to left, rgba(100, 219, 202, 1.0), rgba(88, 77, 217,
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
 }
+
+.form-check-input:checked {
+    background-color: #65d4c6;
+}
+
+textarea{
+  resize: none;
+}
+
+
+a{
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/*******Select picker*******/
+
+.hero{
+  position: relative;
+}
+.ele{
+  position: absolute;
+  z-index: 1;
+  width: 94%;
+}
+
+#selectfield{
+  padding: 8px 15px;
+  height: 40px;
+  width: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+#selectfield p{
+  display: inline-block;
+}
+#selectfield img{
+  width: 12px;
+  float: right;
+  padding: 7px 0;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#list{
+  backdrop-filter: blur(10px);
+  border-radius: 6px;
+  overflow: hidden;
+  padding-left: 0;
+}
+.options{
+  padding: 10px 0 5px 10px;
+  list-style: none;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.options p{
+  display: inline-block;
+  margin-left: 10px;
+}
+.options:hover{
+  background: #f0b491b2;
+  backdrop-filter: blur(10px);
+}
+
+.hide{
+  display: none;
+}
+
+.rotate{
+  transform: rotate(180deg);
+}
+
